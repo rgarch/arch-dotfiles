@@ -1,0 +1,35 @@
+##ColorPalette
+color0 = #000000000000
+color1 = #dcdc32322f2f
+color2 = #0000aaaa0000
+color3 = #aaaa55550000
+color4 = #00003337b82b
+color5 = #b8cb375edb08
+color6 = #2a2aa1a19898
+color7 = #94f494f494f4
+color8 = #555555555555
+color9 = #ffff55555555
+color10 = #5555ffff5555
+color11 = #ffffffff5555
+color12 = #55555555ffff
+color13 = #fe44685eea97
+color14 = #0000ffffffff
+color15 = #ffffffffffff
+
+##Dark Pastels
+color0 = #3F3F3F
+color1 = #709080 ##darkgrey
+color2 = #705050 ##red
+color3 = #DCA3A3 ##lightred
+color4 = #60B48A ##green
+color5 = #72D5A3 ##lightgreen
+color6 = #DFAF8F #yellow/brown
+color7 = #F0DFAF #yellow
+color8 = #9AB8D7 #blue
+color9 = #94BFF3 #lightblue
+color10 = #DC8CC3 #magenta
+color11 = #EC93D3 #lightmagenta
+color12 = #8CD0D3 #cyan
+color13 = #93E0E3 #lightcyan
+color14 = #DCDCDC #lightgray
+color15 = #FFFFFF #white
