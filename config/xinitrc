@@ -1,0 +1,27 @@
+#!/bin/sh
+killall pulseaudio 
+nitrogen --restore 
+urxvtd -q -o -f 
+
+restore_alsa() {
+	while [ -z "$(pidof pulseaudio)" ]; do
+		sleep 0.5
+		done
+	alsactl -f /var/lib/alsa/asound.state restore 
+}
+
+restore_alsa &
+
+[[ -f ~/.Xdefaults ]] && xrdb -merge ~/.Xdefaults
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+xset +fp /usr/share/fonts/local
+xset fp rehash
+
+session=${1:-xfce}
+case $session in 
+		xfce) exec startxfce4;;
+		i3) exec i3;;
+		# No known session, try to run it as command
+		*) exec $1;;
+esac
