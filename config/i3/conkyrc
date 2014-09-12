@@ -1,0 +1,43 @@
+background        no
+out_to_console 	  yes
+out_to_x	  no
+max_text_width 0
+own_window no
+
+update_interval 2.0
+# Update interval in seconds
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
+short_units yes
+
+# How strict should if_up be when testing an interface for being up?
+# The value is one of up, link or address, to check for the interface
+# being solely up, being up and having link or being up, having link
+# and an assigned IP address. 
+if_up_strictness address
+
+use_spacer left
+
+override_utf8_locale no
+
+cpu_avg_samples 2
+
+TEXT
+[
+#Shows uploadspeed
+  {"full_text": " ▲ [${upspeed wlan0}] ", "color":"\#ff0000"},
+#Shows downloadspeed
+  {"full_text": " ▼ [${downspeed wlan0}] ", "color":"\#00fff2"},
+#Shows current memory usage with a bar
+  {"full_text": " || [$membar] ", "color":"\#B58900"},
+#Shows current CPU usage with a bar
+  {"full_text": " ■ [$cpubar] ", "color":"\#00A9B5"},
+#Shows upime
+  {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"},
+#Shows time
+  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#2fdc57"}
+],
