@@ -4,7 +4,7 @@ out_to_x	  no
 max_text_width 0
 own_window no
 
-update_interval 2.0
+update_interval 0.5
 # Update interval in seconds
 
 # This is the number of times Conky will update before quitting.
@@ -28,16 +28,11 @@ cpu_avg_samples 2
 
 TEXT
 [
-#Shows uploadspeed
-  {"full_text": " ▲ [${upspeed wlan0}] ", "color":"\#ff0000"},
-#Shows downloadspeed
-  {"full_text": " ▼ [${downspeed wlan0}] ", "color":"\#00fff2"},
-#Shows current memory usage with a bar
-  {"full_text": " || [$membar] ", "color":"\#B58900"},
-#Shows current CPU usage with a bar
-  {"full_text": " ■ [$cpubar] ", "color":"\#00A9B5"},
-#Shows upime
-  {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"},
-#Shows time
-  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#2fdc57"}
+  {"full_text": "  [${addr enp3s0}] ", "color":"\#6C7A89"},
+  {"full_text": "  [${upspeed enp3s0}] ", "color":"\#0049FF"},
+  {"full_text": "  [${downspeed enp3s0}] ", "color":"\#00FF09"},
+  {"full_text": "  [${fs_free /home}] ", "color":"\#F62459"},
+  {"full_text": "  [$membar] ", "color":"\#00EFFF"},
+  {"full_text": "  [$cpubar] ", "color":"\#8D00FF"},
+  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#FFFFFF"}
 ],
