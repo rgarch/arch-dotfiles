@@ -1,8 +1,8 @@
 background        no
 out_to_console 	  yes
-out_to_x	  no
-max_text_width 0
-own_window no
+out_to_x	      no
+max_text_width    0
+own_window        no
 
 update_interval 0.5
 # Update interval in seconds
@@ -20,19 +20,19 @@ short_units yes
 # and an assigned IP address. 
 if_up_strictness address
 
-use_spacer left
+use_spacer right
 
 override_utf8_locale no
 
 cpu_avg_samples 2
 
 TEXT
-[
-  {"full_text": "  [${addr enp3s0}] ", "color":"\#6C7A89"},
-  {"full_text": "  [${upspeed enp3s0}] ", "color":"\#0049FF"},
-  {"full_text": "  [${downspeed enp3s0}] ", "color":"\#00FF09"},
-  {"full_text": "  [${fs_free /home}] ", "color":"\#F62459"},
-  {"full_text": "  [$membar] ", "color":"\#00EFFF"},
-  {"full_text": "  [$cpubar] ", "color":"\#8D00FF"},
-  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#FFFFFF"}
-],
+,[
+  {"full_text": "  [${addr enp3s0}] ", "color":"\#6C7A89", "separator": false, "separator_block_width":6},\
+  {"full_text": "  [${upspeed enp3s0}] ", "color":"\#0049FF", "separator": false, "separator_block_width":6},\
+  {"full_text": "  [${downspeed enp3s0}] ", "color":"\#00FF09", "separator": false, "separator_block_width":6},\
+  {"full_text": "  [${fs_free /home}] ", "color":"\#F62459", "separator": false, "separator_block_width":6},\
+  {"full_text": "  [$membar] ", "color":"\#00EFFF", "separator": false, "separator_block_width":6},\
+  {"full_text": "  [$cpubar] ", "color":"\#8D00FF", "separator": false, "separator_block_width":6},\
+  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#FFFFFF", "separator": false}
+]
