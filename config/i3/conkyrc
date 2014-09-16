@@ -1,34 +1,22 @@
-background        no
-out_to_console 	  yes
-out_to_x	      no
-max_text_width    0
-own_window        no
+background             no
+out_to_console 	       yes
+out_to_x	           no
+max_text_width         0
+own_window             no
+update_interval        0.5
+total_run_times        0
+short_units            yes
+if_up_strictness       address
+use_spacer             right
+override_utf8_locale   no
+cpu_avg_samples        2
+mpd_host               oblivion
+mpd_port               6600
 
-update_interval 0.5
-# Update interval in seconds
-
-# This is the number of times Conky will update before quitting.
-# Set to zero to run forever.
-total_run_times 0
-
-# Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
-short_units yes
-
-# How strict should if_up be when testing an interface for being up?
-# The value is one of up, link or address, to check for the interface
-# being solely up, being up and having link or being up, having link
-# and an assigned IP address. 
-if_up_strictness address
-
-use_spacer right
-
-override_utf8_locale no
-
-cpu_avg_samples 2
 
 TEXT
 ,[
-  {"full_text": "${moc_title}", "color":"\#19B5FE", "separator": false, "separator_block_width":6},\
+  {"full_text": "   ${mpd_smart} ", "color":"\#19B5FE", "separator": false, "separator_block_width":6},\
   {"full_text": "  [${addr enp3s0}] ", "color":"\#6C7A89", "separator": false, "separator_block_width":6},\
   {"full_text": "  [${upspeed enp3s0}] ", "color":"\#0049FF", "separator": false, "separator_block_width":6},\
   {"full_text": "  [${downspeed enp3s0}] ", "color":"\#00FF09", "separator": false, "separator_block_width":6},\
