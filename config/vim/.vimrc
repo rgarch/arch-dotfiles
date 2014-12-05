@@ -1,6 +1,3 @@
-set nocompatible
-filetype off
-
 version 6.0
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
@@ -30,15 +27,6 @@ set termencoding=utf-8
 set nu
 set ts=4
 " vim: set ft=vim :
-colors neon
+colorscheme molokai
 syntax on
 set nowrap
-set autoread
-set smartindent
-set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab
-set mousehide
-set enc=utf-8
