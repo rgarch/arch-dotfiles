@@ -1,3 +1,5 @@
+##
+##
 set $mod Mod4
 font                   pango:DejaVu Sans Mono 8
 floating_modifier      $mod
@@ -102,20 +104,19 @@ new_window pixel 1
 client.background #0033FF
 
 bar {
-        status_command     /home/ominous/.config/i3/conkyi3
-	    font               pango:Source Code Pro 10
-		position           top
+	status_command     /home/ominous/.config/i3/conkyi3
+	font               pango: Source Code Pro 10
+	position           top
 
 colors {
-		background			#000000
-		statusline			#ffffff
-		focused_workspace	#ffffff  #6200FF
-		active_workspace	#000000  #0DFF00
-		inactive_workspace	#a9a9a9  #000D9F
-		urgent_workspace	#FFFFFF  #900000
+	background			#000000
+	statusline			#ffffff
+	focused_workspace	#ffffff	#6200FF
+	active_workspace	#000000	#0DFF00
+	inactive_workspace	#a9a9a9	#000D9F
+	urgent_workspace	#ffffff	#900000
 	}
 }
 
-exec --no-startup-id xscreensaver &  
-exec --no-startup-id CopyAgent &
 exec --no-startup-id compton &
+exec --no-startup-id xscreensaver &
