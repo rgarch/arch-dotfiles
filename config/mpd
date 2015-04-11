@@ -1,0 +1,42 @@
+#####
+#####
+
+music_directory             "/home/user/Music"
+playlist_directory          "/home/user/.config/mpd/playlists"
+db_file                     "/home/user/.config/mpd/mpd.db"
+log_file                    "/home/user/.config/mpd/mpd.log"
+pid_file                    "/home/user/.config/mpd/mpd.pid"
+state_file                  "/home/user/.config/mpd/mpdstate"
+bind_to_address             "127.0.0.1"
+port                        "6600"
+restore_paused              "yes"
+
+audio_output {
+	type		"httpd"
+	name		"user"
+	#quality	"1.0"
+	bitrate		"320"
+	encoder		"lame"
+	port		"8003"
+	format		"44100:*:2"
+	buffer_time	"600000"
+}
+
+audio_output {
+	type			"alsa"
+	name			"My ALSA Device"
+	#options		"dev=dmixer"
+	device			"hw:0,0"
+	#format			"44100:16:2"
+	mixer_type		"hardware"
+	mixer_device	"default"
+	mixer_control	"Master"
+	#auto_resample	"no"
+}
+
+audio_output {
+	type			"fifo"
+	name			"Fifo"
+	path			"/tmp/mpd.fifo"
+	format			"44100:16:2"
+}	
