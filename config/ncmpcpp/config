@@ -18,7 +18,7 @@ visualizer_in_stereo = "yes"
 
 #playlist
 song_columns_list_format = "(10)[blue]{l} (40)[cyan]{t} (20)[green]{a} (15)[magenta]{b}"
-song_list_format = "{$5%a$3 > }{$8%t}$R{$6%l}"
+song_list_format = "{$5%a$3 > }{$8%t}$R{$7%l}"
 #song_columns_list_format = "(25)[blue]{a} (25)[white]{b} (40)[cyan]{t} (5)[green]{l}"
 playlist_display_mode = "classic" (classic/colums)
 browser_display_mode = "columns"
@@ -29,9 +29,9 @@ discard_colors_if_item_is_selected = "yes"
 header_window_color = "cyan"
 volume_color = "cyan"
 colors_enabled = "yes"
-main_window_color = "magenta"
+main_window_color = "cyan"
 main_window_highlight_color = "default"
-progressbar_color = "magenta"
+progressbar_color = "cyan"
 visualizer_color = "magenta"
 
 #bars
