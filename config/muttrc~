@@ -1,11 +1,12 @@
 set imap_user               = "REDACTED"
 set imap_pass               = "REDACTED"
-set imap_check_subscribed
+set spoolfile               = "+INBOX"
 set mail_check              = 120
-set spoolfile				= "imaps://imap.gmail.com:993/INBOX"
+mailboxes                   = "+[Gmail]/Inbox"
+mailboxes                   = "imaps://imap.gmail.com/INBOX"
 set postponed               = "+[Gmail]/Drafts"
 set message_cachedir        = "~/.cache/mutt"
-set folder                  = "imaps://imap.gmail.com:993"
+set folder                  = "imaps://imap.gmail.com"
 set smtp_url                = "smtp://REDACTED@smtp.gmail.com:587/"
 set from                    = "REDACTED"
 set realname                = "REDACTED"
