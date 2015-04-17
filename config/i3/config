@@ -5,7 +5,7 @@ font                   pango: Source Code Pro 10.5
 floating_modifier      $mod
 bindsym $mod+Return    exec --no-startup-id /usr/bin/termite
 bindsym $mod+u         exec --no-startup-id /usr/bin/urxvtc
-bindsym $mod+y		   exec --no-startup-id /usr/bin/xfce4-terminal
+bindsym $mod+y         exec --no-startup-id /usr/local/bin/st
 # kill focused window
 bindsym $mod+x kill 
 
