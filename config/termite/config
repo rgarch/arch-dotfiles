@@ -12,7 +12,7 @@ clickable_url = true
 font = Source Code Pro 11.4
 scrollback_lines = 1000
 search_wrap = true
-#icon_name = terminal
+icon_name = termite
 geometry = 740x580
 #window_border = true
 # 0.0: opaque, 1.0: transparent
@@ -40,74 +40,84 @@ browser = chromium
 #foreground = #FFFFFF
 #background = #000000
 #foreground_bold = #FFFFFF
-background = rgba(0, 0, 0, 0.75)
+background = rgba(0, 0, 0, 1.0)
 #cursor = #CF000F
 cursor = #22A7F0
 #cursor = #0091FF
 #cursor = #5F00FF
-#highlight = #2f2f2f
+highlight = #2f2f2f
 
 ##ColorPalette
-#color0 = #000000000000
+color0 = #000000000000
 #color1 = #dcdc32322f2f
+color1 = #B32323
 #color2 = #0000aaaa0000
+color2 = #0EAC06
 #color3 = #aaaa55550000
+color3 = #FF9F3E
 #color4 = #00003337b82b
-#color5 = #b8cb375edb08
+color4 = #4957F3
+color5 = #b8cb375edb08
 #color6 = #2a2aa1a19898
-#color7 = #94f494f494f4
-#color8 = #555555555555
+color6 = #00FFFF
+color7 = #94f494f494f4
+color8 = #555555555555
 #color9 = #ffff55555555
+color9 = #DC2C2C
 #color10 = #5555ffff5555
+color10 = #0DFF00
 #color11 = #ffffffff5555
+color11 = #E6CB29
 #color12 = #55555555ffff
-#color13 = #fe44685eea97
+color12 = #4D79FF
+color13 = #fe44685eea97
 #color14 = #0000ffffffff
-#color15 = #ffffffffffff
+color14 = #33FFFF
+color15 = #ffffffffffff
 
 ##Euphrasia 2
 #background = #000000
 foreground = #FFFFFF
 
 #black
-color0 = #222946
+#color0 = #222946
 #dark grey
-color8 = #8C8B89
+#color8 = #8C8B89
 
 #red
-color1 = #B32323
+#color1 = #B32323
 #bright red
-color9 = #DC2C2C
+#color9 = #DC2C2C
 
 #green
-color2 = #1AAA13
+#color2 = #1AAA13
 #bright green
-color10 = #5DCE33
+#color10 = #5DCE33
 
 #yellow
-color3 = #FF9F3E
+#color3 = #FF9F3E
 #bright yellow
-color11 = #E6CB29
+#color11 = #E6CB29
 
 #blue
-color4 = #4957F3
+#color4 = #4957F3
 #bright blue
-color12 = #4D79FF
+#color12 = #4D79FF
 
 #magenta
-color5 = #BF3E94
+#color5 = #BF3E94
 #bright magenta
-color13 = #B641CC
+#color13 = #B641CC
 
 #cyan
-color6 = #09A5B3
+#color6 = #09A5B3
 #bright cyan
-color14 = #3CB6F3
+#color14 = #3CB6F3
 
 #light grey
-color7 = #AEAEAE
+#color7 = #AEAEAE
 #white
-color15 = #DBDDE4
+#color15 = #DBDDE4
 
 
 ##Euphrasia 1
