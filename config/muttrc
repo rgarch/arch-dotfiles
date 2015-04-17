@@ -1,19 +1,19 @@
-set imap_user			= ""
-set imap_pass			= ""
+set imap_user= ""
+set imap_pass= ""
 set imap_check_subscribed
-set certificate_file    = "~/.mutt/certificates"
-set spoolfile			= "imaps://imap.gmail.com:993/INBOX"
-set mail_check			= 120
-set postponed			= "+Drafts"
-set record				= "+Sent"
-set message_cachedir	= "~/.cache/mutt"
-set folder				= "~/Mail
-set smtp_url			= ""
-set from 				= ""
-set realname			= ""
-set send_charset		= "utf-8"
+set certificate_file= "~/.mutt/certificates"
+set spoolfile= "imaps://imap.gmail.com:993/INBOX"
+set mail_check= 120
+set postponed= "+Drafts"
+set record= "+Sent"
+set message_cachedir= "~/.cache/mutt"
+set folder= "~/Mail
+set smtp_url= ""
+set from= ""
+set realname= ""
+set send_charset= "utf-8"
 bind index "^"	imap-fetch-mail
-set signature			= "~/.mutt/.signature"
+set signature= "~/.mutt/.signature"
 # -*-muttrc-*-
 
 # Palette for use with the Linux console.  Black background.
