@@ -7,26 +7,17 @@ visible_bell = false
 mouse_autohide = true
 allow_bold = true
 dynamic_title = true
-urgent_on_bell = true
+urgent_on_bell = false
 clickable_url = true
 font = Source Code Pro 11.4
 scrollback_lines = 1000
 search_wrap = true
 icon_name = termite
 geometry = 740x580
-#window_border = true
-# 0.0: opaque, 1.0: transparent
-#transparency = 0.8
 pseudo_transparency = false
-# "system", "on" or "off"
 cursor_blink = off
-
-# "block", "underline" or "ibeam"
 cursor_shape = block
-
-# $BROWSER is used by default
-browser = chromium
-
+browser = dwb
 # word characters used for word selection
 # (default if unset: all graphic non-punctuation/space characters)
 #word_chars = -A-Za-z0-9,./?%&#:_=+@~
@@ -37,18 +28,18 @@ browser = chromium
 [colors]
 #background = #D0CECB
 #foreground = #090C19
-#foreground = #FFFFFF
+foreground = #F0FFFF
 #background = #000000
-#foreground_bold = #FFFFFF
-background = rgba(0, 0, 0, 1.0)
+foreground_bold = #FFFFFF
+background = rgba(0, 0, 0, 0.85)
+#background = rgba(0, 187, 255, 0.80)
 #cursor = #CF000F
-cursor = #22A7F0
+cursor = #3333FF
 #cursor = #0091FF
 #cursor = #5F00FF
-highlight = #2f2f2f
 
 ##ColorPalette
-color0 = #000000000000
+color0 = #000000
 #color1 = #dcdc32322f2f
 color1 = #B32323
 #color2 = #0000aaaa0000
@@ -73,11 +64,10 @@ color12 = #4D79FF
 color13 = #fe44685eea97
 #color14 = #0000ffffffff
 color14 = #33FFFF
-color15 = #ffffffffffff
+color15 = #FFFFFF
 
 ##Euphrasia 2
 #background = #000000
-foreground = #FFFFFF
 
 #black
 #color0 = #222946
