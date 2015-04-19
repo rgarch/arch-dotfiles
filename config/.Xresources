@@ -12,11 +12,11 @@ urxvt.tintColor:            grey
 urxvt.shading:              30
 URxvt.font:					xft:SourceCodePro:Regular:size=11:antialias=true:autohint=true,\
 							xft:DejaVuSansMono:size=11:antialias=true:autohint=true,\
-							xft:NanumGothic:size=11:antialias=true:autohint=true
+							xft:NanumGothic:Regular:size=11:antialias=true:autohint=true
 
 URxvt.boldFont:				xft:SourceCodePro:Bold:size=11:antialias=true:autohint=true,\
-							xft:DejaVuSansMono:size=11:antialias=true:autohint=true,\
-							xft:NanumGothic:size=11:antialias=true:autohint=true
+							xft:DejaVuSansMono:Bold:size=11:antialias=true:autohint=true,\
+							xft:NanumGothic:Bold:size=11:antialias=true:autohint=true
 !URxvt.font:					xft:Hermit:size=10
 !URxvt.boldFont:				xft:Hermit:size=10
 
@@ -24,10 +24,10 @@ URxvt.termName:				rxvt-unicode-256color
 
 URxvt*background:  [85]#000000
 URxvt*foreground:  [100]#FFFFFF
-*cursorColor:      #22A7F0
+*cursorColor:      #CF000F
 
 ! black
-*color0:  #222946
+*color0:  #000000
 ! dark grey
 *color8:  #8C8B89
 
@@ -95,5 +95,5 @@ URxvt*foreground:  [100]#FFFFFF
 #urxvt*cursorColor:            #CF000F
 
 URxvt.perl-ext-common:   default,matcher,vtwheel
-URxvt.url-launcher:      /usr/bin/chromium
+URxvt.url-launcher:      /usr/bin/dwb
 URxvt.matcher.button:    1
