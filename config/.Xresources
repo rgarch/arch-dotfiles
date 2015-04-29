@@ -1,30 +1,28 @@
 ##
-urxvt.cursorUnderline:      false
-urxvt.url-select.underline: false
+urxvt.cursorUnderline:      False
+urxvt.url-select.underline: False
 urxvt.borderless:           1
-urxvt.scrollBar:            false
-urxvt.scrollBar_right:      false
+urxvt.scrollBar:            False
+urxvt.scrollBar_right:      False
 urxvt.depth:                32
 urxvt.urgentOnBell:         False
-#urxvt.background:          [100]#000000
-#urxvt.foreground:          [100]#FFFFFF
 urxvt.tintColor:            grey
 urxvt.shading:              30
-URxvt.font:					xft:SourceCodePro:Regular:size=11:antialias=true:autohint=true,\
-							xft:DejaVuSansMono:size=11:antialias=true:autohint=true,\
+URxvt.font:					xft:SourceCodePro:size=10.5:antialias=true:autohint=true,\
+							xft:Symbola:size=10.5:antialias=true:autohint=true,\
+							xft:DejaVuSansMono:size=10.5:antialias=true:autohint=true,\
 							xft:NanumGothic:Regular:size=11:antialias=true:autohint=true
 
-URxvt.boldFont:				xft:SourceCodePro:Bold:size=11:antialias=true:autohint=true,\
-							xft:DejaVuSansMono:Bold:size=11:antialias=true:autohint=true,\
+URxvt.boldFont:				xft:SourceCodePro:Bold:size=10.5:antialias=true:autohint=true,\
+							xft:Symbola:Bold:size=10.5:antialias=true:autohint=true,\
+							xft:DejaVuSansMono:Bold:size=10.5:antialias=true:autohint=true,\
 							xft:NanumGothic:Bold:size=11:antialias=true:autohint=true
-!URxvt.font:					xft:Hermit:size=10
-!URxvt.boldFont:				xft:Hermit:size=10
 
 URxvt.termName:				rxvt-unicode-256color
 
-URxvt*background:  [85]#000000
+URxvt*background:  [100]#000000
 URxvt*foreground:  [100]#FFFFFF
-*cursorColor:      #CF000F
+*cursorColor:      #0033FF
 
 ! black
 *color0:  #000000
@@ -52,9 +50,9 @@ URxvt*foreground:  [100]#FFFFFF
 *color12: #4D79FF
 
 ! magenta
-*color5:	#BF3E94
+*color5:	#9A12B3
 ! bright magenta
-*color13:	#B641CC
+*color13:	#FC2CF5
 
 ! cyan
 *color6:  #09A5B3
@@ -64,7 +62,7 @@ URxvt*foreground:  [100]#FFFFFF
 ! light grey
 *color7:  #AEAEAE
 ! white
-*color15: #DBDDE4
+*color15: #FFFFFF
 
 
 ! Black
@@ -95,5 +93,5 @@ URxvt*foreground:  [100]#FFFFFF
 #urxvt*cursorColor:            #CF000F
 
 URxvt.perl-ext-common:   default,matcher,vtwheel
-URxvt.url-launcher:      /usr/bin/dwb
+URxvt.url-launcher:      /usr/bin/chromium
 URxvt.matcher.button:    1
