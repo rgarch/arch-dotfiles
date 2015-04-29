@@ -1,7 +1,7 @@
 ##
 ##
 set $mod Mod4
-font                   pango: Source Code Pro 10.5
+font                   pango: Source Code Pro Semibold 10.5
 floating_modifier      $mod
 bindsym $mod+Return    exec --no-startup-id /usr/bin/termite
 bindsym $mod+u         exec --no-startup-id /usr/bin/urxvtc
@@ -113,7 +113,7 @@ client.unfocused		#000D9F #000000	#0091FF #484e50
 
 bar {
 	status_command     /home/ominous/.config/i3/conkyi3
-	font               pango: FontAwesome 10, SourceCodeProMedium 10.5
+	font               pango: FontAwesome 10.5, Source Code Pro Semibold 10.5
 	position           top
 
 colors {
