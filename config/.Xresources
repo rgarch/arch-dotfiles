@@ -20,7 +20,7 @@ URxvt.boldFont:				xft:SourceCodePro:Bold:size=10.5:antialias=true:autohint=true
 
 URxvt.termName:				rxvt-unicode-256color
 
-URxvt*background:  [100]#000000
+URxvt*background:  [80]#000000
 URxvt*foreground:  [100]#FFFFFF
 *cursorColor:      #0033FF
 
