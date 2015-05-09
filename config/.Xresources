@@ -1,28 +1,23 @@
-##
-urxvt.cursorUnderline:      False
-urxvt.url-select.underline: False
-urxvt.borderless:           1
-urxvt.scrollBar:            False
-urxvt.scrollBar_right:      False
-urxvt.depth:                32
-urxvt.urgentOnBell:         False
-urxvt.tintColor:            grey
-urxvt.shading:              30
-URxvt.font:					xft:SourceCodePro:size=10.5:antialias=true:autohint=true,\
-							xft:Symbola:size=10.5:antialias=true:autohint=true,\
-							xft:DejaVuSansMono:size=10.5:antialias=true:autohint=true,\
-							xft:NanumGothic:Regular:size=11:antialias=true:autohint=true
+urxvt*font:xft:SourceCodePro:pixelsize=14:antialias=true,xft:DejaVuSansMono:pixelsize=14:antialias=true,xft:NanumGothic:pixelsize=14:antialias=true
+urxvt*boldFont:xft:SourceCodePro:pixelsize=14:antialias=true:bold,xft:DejaVuSansMono:pixelsize=14:antialias=true:bold,xft:NanumGothic:pixelsize=14:antialias=true:bold
+urxvt*cursorUnderline:      False
+urxvt*url-select.underline: False
+urxvt*borderless:           1
+urxvt*scrollBar:            False
+urxvt*scrollBar_right:      False
+urxvt*depth:                32
+urxvt*urgentOnBell:         False
+urxvt*shading:              30
+urxvt*termName:				rxvt-unicode-256color
+urxvt*background:  [80]#000000
+urxvt*foreground:  [100]#FFFFFF
+urxvt*cursorColor:      #0033FF
 
-URxvt.boldFont:				xft:SourceCodePro:Bold:size=10.5:antialias=true:autohint=true,\
-							xft:Symbola:Bold:size=10.5:antialias=true:autohint=true,\
-							xft:DejaVuSansMono:Bold:size=10.5:antialias=true:autohint=true,\
-							xft:NanumGothic:Bold:size=11:antialias=true:autohint=true
-
-URxvt.termName:				rxvt-unicode-256color
-
-URxvt*background:  [80]#000000
-URxvt*foreground:  [100]#FFFFFF
-*cursorColor:      #0033FF
+Xft.dpi:		100
+Xft.antialias:	true
+Xft.rgba:		rgb
+Xft.hinting:	true
+Xft.hintstyle:	full
 
 ! black
 *color0:  #000000
