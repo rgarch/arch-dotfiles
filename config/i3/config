@@ -48,7 +48,7 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 # browsers
-bindsym $mod+b exec --no-startup-id /usr/bin/chromium
+bindsym $mod+b exec --no-startup-id /usr/bin/google-chrome-stable
 # focus the parent container
 bindsym $mod+a focus parent
 # switch to workspace
@@ -102,7 +102,7 @@ new_window pixel 1
 #colors
 client.background 		#0091FF
 client.focused			#6200FF #000000 #FFFFFF #2e9ef4
-client.unfocused		#000D9F #000000	#0091FF #484e50
+client.unfocused		#000D9F #1e1e27	#0091FF #484e50
 
 # class                 border  backgr. text    indicator
 #client.focused          #000000 #6200FF #ffffff #2e9ef4
@@ -125,6 +125,7 @@ colors {
 	urgent_workspace	#ffffff	#900000
 	}
 }
+exec --no-startup-id volumeicon &
 exec --no-startup-id nm-applet &
 exec --no-startup-id compton &
 exec --no-startup-id xscreensaver &
