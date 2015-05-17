@@ -9,7 +9,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = false
 clickable_url = true
-font = Source Code Pro 10.6
+font = Source Code Pro 10.4
 scrollback_lines = 1000
 search_wrap = true
 icon_name = termite
@@ -17,7 +17,7 @@ geometry = 740x580
 pseudo_transparency = false
 cursor_blink = off
 cursor_shape = block
-browser = chromium
+browser = google-chrome-stable
 # word characters used for word selection
 # (default if unset: all graphic non-punctuation/space characters)
 #word_chars = -A-Za-z0-9,./?%&#:_=+@~
@@ -31,7 +31,7 @@ browser = chromium
 foreground = #FFFFFF
 #background = #000000
 foreground_bold = #FFFFFF
-background = rgba(0, 0, 0, 0.85)
+background = rgba(0, 0, 0, 1.0)
 cursor = #0033FF
 #cursor = #CF000F
 #cursor = #3333FF
