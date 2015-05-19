@@ -1,10 +1,10 @@
 ####
 
-ncmpcpp_directory = "/home/ominous/.ncmpcpp"
-mpd_music_dir = "/home/ominous/Music"
+ncmpcpp_directory = "/home/ricky/.ncmpcpp"
+mpd_music_dir = "/home/ricky/Media/Music"
 
 mpd_connection_timeout = "5"
-mpd_host = "10.42.0.2"
+mpd_host = "127.0.0.1"
 mpd_port = "6600"
 clock_display_seconds = "yes"
 #mpd_communication_mode = "notifications"
@@ -40,3 +40,4 @@ titles_visibility = "no"
 statusbar_visibility = "yes"
 header_visibility = "no"
 song_status_format = "{%a - %t}"
+
