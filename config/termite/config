@@ -9,7 +9,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = false
 clickable_url = true
-font = Source Code Pro 11
+font = Source Code Pro 10.5
 scrollback_lines = 1000
 search_wrap = true
 icon_name = termite
@@ -26,13 +26,56 @@ browser = chromium
 #size_hints = false
 
 [colors]
-#background = #D0CECB
-#foreground = #090C19
-foreground = #FFFFFF
-#background = #000000
-foreground_bold = #FFFFFF
-background = rgba(0, 0, 0, 1.0)
-cursor = #0033FF
+
+# special
+foreground      = #FFFFFF
+#foreground      = #c7ccd1
+foreground_bold = #c7ccd1
+cursor          = #CF000F
+background      = #1c2023
+
+# black
+#color0  = #1c2023
+#color8  = #747c84
+
+# red
+#color1  = #c7ae95
+#color9  = #c7ae95
+
+# green
+#color2  = #95c7ae
+#color10 = #95c7ae
+
+# yellow
+#color3  = #aec795
+#color11 = #aec795
+
+# blue
+#color4  = #ae95c7
+#color12 = #ae95c7
+
+# magenta
+#color5  = #c795ae
+#color13 = #c795ae
+
+# cyan
+#color6  = #95aec7
+#color14 = #95aec7
+
+# white
+#color7  = #c7ccd1
+#color15 = #f3f4f5
+
+#[colors]
+#foreground = #28f781
+#foreground = #00FF00
+#background = #002111
+#foreground_bold = #28f781
+#foreground = #FFFFFF
+#background = rgba(0, 0, 0, 1.0)
+#foreground_bold = #FFFFFF
+#cursor = #00ff00
+#cursor = #0033FF
 #cursor = #CF000F
 #cursor = #3333FF
 #cursor = #0091FF
@@ -41,9 +84,9 @@ cursor = #0033FF
 ##Euphrasia 2
 
 #black
-color0 = #000000
+#color0 = #000000
 #dark grey
-color8 = #8C8B89
+#color8 = #8C8B89
 
 #red
 color1 = #B32323
@@ -123,7 +166,7 @@ color15 = #FFFFFF
 #color15 = #DBDDE4
 
 [hints]
-font = Monaco 9
+font = Source Code Pro 10
 foreground = #FFFFFF
 background = #00A2FF
 padding = 2
