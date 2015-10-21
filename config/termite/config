@@ -9,7 +9,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = false
 clickable_url = true
-font = Source Code Pro 10.5
+font = Source Code Pro 11
 scrollback_lines = 1000
 search_wrap = true
 icon_name = termite
@@ -17,7 +17,7 @@ geometry = 740x580
 pseudo_transparency = false
 cursor_blink = off
 cursor_shape = block
-browser = chromium
+browser = google-chrome-stable
 # word characters used for word selection
 # (default if unset: all graphic non-punctuation/space characters)
 #word_chars = -A-Za-z0-9,./?%&#:_=+@~
@@ -28,26 +28,69 @@ browser = chromium
 [colors]
 
 # special
-#foreground      = #FFFFFF
-foreground      = #c7ccd1
-foreground_bold = #FFFFFF
-cursor          = #CF000F
-background      = #1c2023
+foreground		= #FFFFFF
+#background		= #1b1918
+#foreground      = #c7ccd1
+foreground_bold	= #FFFFFF
+#cursor          = #CF000F
+background      = #121212
 #foreground = #28f781
 #foreground = #00FF00
 #background = #002111
 #foreground_bold = #28f781
 #foreground = #FFFFFF
-#background = rgba(0, 0, 0, 1.0)
+#background = #000000
+#background		= rgba(0, 0, 0, 1.0)
+#background = rgba(27, 25, 24, 0.80)
 #foreground_bold = #FFFFFF
 #cursor = #00ff00
 #cursor = #0033FF
 #cursor = #CF000F
 #cursor = #3333FF
-#cursor = #0091FF
-#cursor = #5F00FF
+#cursor			= #0091FF
+cursor = #5F00FF
 
 ##Euphrasia 2
+
+#[colors]
+
+# special
+#foreground      = #a8a19f
+#foreground_bold = #a8a19f
+#cursor          = #a8a19f
+#background      = #1b1918
+
+# black
+#color0  = #1b1918
+#color8  = #766e6b
+
+# red
+#color1  = #f22c40
+#color9  = #f22c40
+
+# green
+#color2  = #5ab738
+#color10 = #5ab738
+
+# yellow
+#color3  = #d5911a
+#color11 = #d5911a
+
+# blue
+#color4  = #407ee7
+#color12 = #407ee7
+
+# magenta
+#color5  = #6666ea
+#color13 = #6666ea
+
+# cyan
+#color6  = #00ad9c
+#color14 = #00ad9c
+
+# white
+#color7  = #a8a19f
+#color15 = #f1efee
 
 #black
 color0 = #000000
