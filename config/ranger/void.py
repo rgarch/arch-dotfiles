@@ -40,12 +40,12 @@ class Void(ColorScheme):
                 fg = 202
                 attr |= bold
             if context.socket:
-                fg = 136
-                bg = 230
+                fg = 232
+                bg = 51
                 attr |= bold
             if context.fifo:
-                fg = 136
-                bg = 230
+                fg = 232
+                bg = 51
                 attr |= bold
             if context.device:
                 fg = 244
