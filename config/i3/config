@@ -3,15 +3,23 @@
 set $mod Mod4
 font							pango:Source Code Pro 14px
 floating_modifier				$mod
-bindsym $mod+Shift+Return 		exec --no-startup-id /usr/local/bin/st
+bindsym $mod+t					exec --no-startup-id /usr/local/bin/st
 bindsym $mod+Return				exec --no-startup-id /usr/bin/termite
+bindsym $mod+u					exec --no-startup-id /usr/bin/urxvtc
 # kill focused window
 bindsym $mod+x 					kill 
-
+#mpd controls
+bindsym $mod+F4					exec --no-startup-id /usr/bin/mpc play
+bindsym Shift+F4				exec --no-startup-id /usr/bin/mpc stop
+bindsym Shift+F1 				exec --no-startup-id /usr/bin/mpc volume -100
+bindsym Shift+F3 				exec --no-startup-id /usr/bin/mpc volume +5
+bindsym Shift+F2 				exec --no-startup-id /usr/bin/mpc volume -5
+bindsym Shift+F5 				exec --no-startup-id /usr/bin/mpc prev
+bindsym Shift+F6 				exec --no-startup-id /usr/bin/mpc next
 # take a screenshot
 bindsym $mod+Shift+s 			exec --no-startup-id /usr/bin/xfce4-screenshooter
 # start dmenu (a program launcher)
-bindsym $mod+d 					exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -key-run F12
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -77,7 +85,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id i3-msg exit
 # resize window (you can also use the mouse for that)
 mode "resize" {
 		bindsym j resize shrink width 10 px or 10 ppt
@@ -124,6 +133,6 @@ colors {
 	urgent_workspace	#ffffff	#900000
 	}
 }
+exec --no-startup-id xscreensaver &
 exec --no-startup-id fcitx &
 exec --no-startup-id compton &
-exec --no-startup-id xscreensaver &
