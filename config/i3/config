@@ -3,8 +3,8 @@
 set $mod Mod4
 font							pango:Source Code Pro 14px
 floating_modifier				$mod
-bindsym $mod+t					exec --no-startup-id /usr/local/bin/st
 bindsym $mod+Return				exec --no-startup-id /usr/bin/termite
+bindsym $mod+t					exec --no-startup-id /usr/local/bin/st
 bindsym $mod+u					exec --no-startup-id /usr/bin/urxvtc
 # kill focused window
 bindsym $mod+x 					kill 
@@ -19,7 +19,7 @@ bindsym Shift+F6 				exec --no-startup-id /usr/bin/mpc next
 # take a screenshot
 bindsym $mod+Shift+s 			exec --no-startup-id /usr/bin/xfce4-screenshooter
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -key-run F12
+bindsym $mod+d 					exec --no-startup-id /usr/bin/rofi -show run
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -121,7 +121,7 @@ client.unfocused		#000D9F #1E1E27	#0091FF #484E50
 
 bar {
 	status_command     /home/ominous/.config/i3/conkyi3
-	font               pango: FontAwesome 13px, Source Code Pro 13px
+	font               pango:FontAwesome 15px, Source Code Pro 14px
 	position           top
 
 colors {
@@ -133,6 +133,6 @@ colors {
 	urgent_workspace	#ffffff	#900000
 	}
 }
+exec --no-startup-id compton &
 exec --no-startup-id xscreensaver &
 exec --no-startup-id fcitx &
-exec --no-startup-id compton &
