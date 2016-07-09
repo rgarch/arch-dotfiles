@@ -1,29 +1,34 @@
-URxvt*font:			xft:SourceCodePro:pixelsize=14:antialias=true,\
-					xft:DejaVuSansMono:pixelsize=14:antialias=true,\
-					xft:NanumGothic:pixelsize=14:antialias=true
+URxvt*font:xft:SourceCodePro:pixelsize=15:antialias=true:hinting=true,\
+		xft:Symbola:pixelsize=15:antialias=true:hinting=true:style=regular,\
+		xft:NanumGothic:pixelsize=15:antialias=true\
 
-URxvt*boldFont:		xft:SourceCodePro:pixelsize=14:antialias=true:bold,\
-					xft:DejaVuSansMono:pixelsize=14:antialias=true:bold,\
-					xft:NanumGothic:pixelsize=14:antialias=true:bold
+URxvt*boldFont: 
+		xft:SourceCodePro:pixelsize=15:antialias=true:hinting=true:style=bold,\
+		xft:Symbola:pixelsize=13:antialias=true:hinting=true:style=bold,\
+		xft:NanumGothic:pixelsize=15:antialias=true:style=bold\
 
 URxvt*cursorUnderline:      	False
 URxvt*url-select.underline: 	False
 URxvt*borderless:           	1
 URxvt*scrollBar:            	False
 URxvt*scrollBar_right:      	False
-URxvt*depth:                	32
+!! URxvt*depth:                	32
 URxvt*urgentOnBell:         	False
-URxvt*shading:              	30
+!! URxvt*shading:              	30
 URxvt*termName:					rxvt-unicode-256color
 URxvt*background:  				[100]#000000
 URxvt*foreground:  				[100]#FFFFFF
-URxvt*cursorColor:      		#0033FF
+URxvt*cursorColor:      		#8a8a8a
+URxvt*letterSpace:				-1
+URxvt.imLocale:					en_US.UTF-8
+!! URxvt.imLocale:					ISO-8859-1					
 
-! Xft.dpi:		100
-! Xft.antialias:	true
-! Xft.rgba:		rgb
-! Xft.hinting:	true
-! Xft.hintstyle:	full
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.dpi: 102
 
 ! black
 URxvt*color0:  #000000
