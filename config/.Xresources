@@ -1,34 +1,31 @@
-URxvt*font:xft:SourceCodePro:pixelsize=15:antialias=true:hinting=true,\
-		xft:Symbola:pixelsize=15:antialias=true:hinting=true:style=regular,\
-		xft:NanumGothic:pixelsize=15:antialias=true\
+URxvt*font:			xft:Source Code Pro:pixelsize=14:antialias=true,\
+					xft:Noto Emoji:pixelsize=14:antialias=true,\
+					xft:NanumGothicCoding:pixelsize=14:antialias=true
 
-URxvt*boldFont: 
-		xft:SourceCodePro:pixelsize=15:antialias=true:hinting=true:style=bold,\
-		xft:Symbola:pixelsize=13:antialias=true:hinting=true:style=bold,\
-		xft:NanumGothic:pixelsize=15:antialias=true:style=bold\
+URxvt*boldFont:		xft:Source Code Pro:pixelsize=14:antialias=true:bold,\
+					xft:Noto Emoji:pixelsize=14:antialias=true:bold,\
+					xft:NanumGothicCoding:pixelsize=14:antialias=true:bold
 
 URxvt*cursorUnderline:      	False
 URxvt*url-select.underline: 	False
 URxvt*borderless:           	1
 URxvt*scrollBar:            	False
 URxvt*scrollBar_right:      	False
-!! URxvt*depth:                	32
+URxvt*depth:                	32
 URxvt*urgentOnBell:         	False
-!! URxvt*shading:              	30
+URxvt*shading:              	30
 URxvt*termName:					rxvt-unicode-256color
 URxvt*background:  				[100]#000000
 URxvt*foreground:  				[100]#FFFFFF
-URxvt*cursorColor:      		#8a8a8a
-URxvt*letterSpace:				-1
-URxvt.imLocale:					en_US.UTF-8
-!! URxvt.imLocale:					ISO-8859-1					
+URxvt*cursorColor:      		#0033FF
+URxvt*letterSpace:  			-1
 
-Xft.antialias: 1
-Xft.autohint: 0
-Xft.hinting: 1
-Xft.hintstyle: hintslight
-Xft.rgba: rgb
-Xft.dpi: 102
+
+Xft.dpi:		102
+Xft.antialias:	true
+Xft.rgba:		rgb
+Xft.hinting:	true
+Xft.hintstyle:	full
 
 ! black
 URxvt*color0:  #000000
@@ -71,6 +68,7 @@ URxvt*color7:  #AEAEAE
 URxvt*color15: #FFFFFF
 
 
+
 ! Black
 ! urxvt*color0:                 #000000000000
 ! urxvt*color8:                 #555555555555
@@ -102,4 +100,14 @@ URxvt*color15: #FFFFFF
 URxvt.perl-ext-common:   default,matcher,vtwheel
 URxvt.url-launcher:      /usr/bin/chromium
 URxvt.matcher.button:    1
+
+rofi.modi:				run
+rofi.opacity:			100
+rofi.width:				30
+rofi.lines:				10
+rofi.font:				Source Code Pro 12
+rofi.bw:				3
+rofi.hide-scrollbar
+rofi.color-window:		#3a3a3a,	#00ff00
+rofi.color-normal:		#AEAEAE,	#FFFFFF,	#4d4d4d,	#444444,	#00ff00
 
