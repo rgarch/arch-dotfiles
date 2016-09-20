@@ -1,9 +1,8 @@
 URxvt*font:			xft:Source Code Pro:pixelsize=14:antialias=true,\
-					xft:Noto Emoji:pixelsize=14:antialias=true,\
+					xft:Symbola:pixelsize=14:antialias=true,\
 					xft:NanumGothicCoding:pixelsize=14:antialias=true
 
 URxvt*boldFont:		xft:Source Code Pro:pixelsize=14:antialias=true:bold,\
-					xft:Noto Emoji:pixelsize=14:antialias=true:bold,\
 					xft:NanumGothicCoding:pixelsize=14:antialias=true:bold
 
 URxvt*cursorUnderline:      	False
@@ -103,11 +102,11 @@ URxvt.matcher.button:    1
 
 rofi.modi:				run
 rofi.opacity:			100
-rofi.width:				30
+rofi.width:				28
 rofi.lines:				10
-rofi.font:				Source Code Pro 12
+rofi.font:				Source Code Pro 10
 rofi.bw:				3
-rofi.hide-scrollbar
 rofi.color-window:		#3a3a3a,	#00ff00
-rofi.color-normal:		#AEAEAE,	#FFFFFF,	#4d4d4d,	#444444,	#00ff00
-
+rofi.color-normal:		#6c6c6c,	#FFFFFF,	#585858,	#444444,	#00ff00
+rofi.hide-scrollbar:	true
+rofi.separator-style:	solid
