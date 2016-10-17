@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Source Code Pro:pixelsize=14";
+static char font[] = "Source Code Pro,FontAwesome,Symbola,NanumGothicCoding,Sazanami Gothic,cwTeXYen:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -81,12 +81,12 @@ static const char *colorname[] = {
 
 	/* 8 bright colors */
 	"gray50",
-	"#DC2C2C",
+	"#DC322F",
 	"#5DCE33",
 	"#E6CB29",
 	"#5c5cff",
 	"#FC2CF5",
-	"#3CB6F3",
+	"#66EFD5",
 	"#FFFFFF",
 
 	[255] = 0,
