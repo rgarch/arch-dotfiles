@@ -87,7 +87,7 @@ static const char *colorname[] = {
 	"#4D79FF",
 	"#FC2CF5",
 	"#66EFD5",
-	"#FDF6E3",
+	"#FFFFFF",
 
 	[255] = 0,
 
@@ -127,9 +127,7 @@ static unsigned int mousebg = 0;
  * will reverse too. Another logic would only make the simple feature too
  * complex.
  */
-static unsigned int defaultitalic = 15;
-static unsigned int defaultunderline = 15;
-
+static unsigned int defaultattr = 15;
 /*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
@@ -302,7 +300,6 @@ static Key key[] = {
 	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0,    0},
 	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0,    0},
 	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0,    0},
-	{ XK_BackSpace,     XK_NO_MOD,      "\177",          0,    0,    0},
 	{ XK_Home,          ShiftMask,      "\033[2J",       0,   -1,    0},
 	{ XK_Home,          ShiftMask,      "\033[1;2H",     0,   +1,    0},
 	{ XK_Home,          XK_ANY_MOD,     "\033[H",        0,   -1,    0},
@@ -318,6 +315,8 @@ static Key key[] = {
 	{ XK_Next,          ControlMask,    "\033[6;5~",     0,    0,    0},
 	{ XK_Next,          ShiftMask,      "\033[6;2~",     0,    0,    0},
 	{ XK_Next,          XK_ANY_MOD,     "\033[6~",       0,    0,    0},
+	{ XK_BackSpace,     XK_NO_MOD,      "\177",          0,    0,    0},
+	{ XK_BackSpace,     Mod1Mask,       "\033\177",      0,    0,    0},
 	{ XK_F1,            XK_NO_MOD,      "\033OP" ,       0,    0,    0},
 	{ XK_F1, /* F13 */  ShiftMask,      "\033[1;2P",     0,    0,    0},
 	{ XK_F1, /* F25 */  ControlMask,    "\033[1;5P",     0,    0,    0},
