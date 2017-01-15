@@ -1,19 +1,19 @@
 music_directory						"/home/ominous/Music"
 #playlist_directory					"~/.mpd/playlists"
-db_file								"~/.config/mpd/mpd.db"
-log_file							"~/.config/mpd/mpd.log"
-#pid_file							"~/.mpd/pid"
-state_file							"~/.config/mpd/state"
-#user								"nobody"
-group								"audio"
+db_file							"~/.config/mpd/mpd.db"
+log_file						"~/.config/mpd/mpd.log"
+#pid_file						"~/.mpd/pid"
+state_file						"~/.config/mpd/state"
+#user							"nobody"
+group							"audio"
 bind_to_address						"<address>"
-port								"6600"
-log_level							"default"
-#gapless_mp3_playback				"yes"
+port							"6600"
+log_level						"default"
+#gapless_mp3_playback				        "yes"
 #restore_paused						"no"
-save_absolute_paths_in_playlists	"yes"
+save_absolute_paths_in_playlists			"yes"
 metadata_to_use						"artist,album,title,track,name,genre,date,composer,performer,disc"
-auto_update							"yes"
+auto_update						"yes"
 
 
 
@@ -39,5 +39,5 @@ audio_output {
 }
 
 replaygain_limit				"yes"
-volume_normalization			"no"
+volume_normalization				"no"
 filesystem_charset				"UTF-8"
