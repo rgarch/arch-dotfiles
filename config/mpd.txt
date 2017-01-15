@@ -1,0 +1,43 @@
+music_directory						"/home/ominous/Music"
+#playlist_directory					"~/.mpd/playlists"
+db_file								"~/.config/mpd/mpd.db"
+log_file							"~/.config/mpd/mpd.log"
+#pid_file							"~/.mpd/pid"
+state_file							"~/.config/mpd/state"
+#user								"nobody"
+group								"audio"
+bind_to_address						"<address>"
+port								"6600"
+log_level							"default"
+#gapless_mp3_playback				"yes"
+#restore_paused						"no"
+save_absolute_paths_in_playlists	"yes"
+metadata_to_use						"artist,album,title,track,name,genre,date,composer,performer,disc"
+auto_update							"yes"
+
+
+
+input {
+	plugin "curl"
+}
+
+audio_output {
+	type		"pulse"
+	name		"audio device"
+}
+
+audio_output {
+	type		"httpd"
+	encoder		"vorbis"
+	name		"<name>"
+	host		"<address>"
+	port		"<port>"
+	quality		"10.0"
+	always_on	"yes"
+	tags		"yes"
+	format		"44100:16:2"
+}
+
+replaygain_limit				"yes"
+volume_normalization			"no"
+filesystem_charset				"UTF-8"
