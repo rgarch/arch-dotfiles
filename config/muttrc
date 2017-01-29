@@ -19,16 +19,16 @@ auto_view text/html
 alternative_order text/plain text/enriched text/html
 bind attach <return> view-mailcap
 
-color hdrdefault color231 black
+color hdrdefault color252 black
 color quoted color69 black
 color signature blue black
 color attachment magenta black
 color message color46 black
 color error color197 black
-color indicator color46 color235
-color status color46 black
+color indicator color247 color233
+color status color247 color233
 color tree white black
-color normal color15 black
+color normal color252 black
 color markers color197 black
 color search color46 black
 color tilde brightmagenta black
