@@ -10,7 +10,6 @@ set message_cachedir= "~/.cache/mutt"
 set folder= "imaps://imap.gmail.com:993"
 set smtp_url= "smtps://REDACTED@smtp.gmail.com"
 set from= "REDACTED@gmail.com"
-set realname= "REDACTED"
 set send_charset= "utf-8"
 bind index "^"	imap-fetch-mail
 set signature= "~/.mutt/.signature"
@@ -20,19 +19,18 @@ auto_view text/html
 alternative_order text/plain text/enriched text/html
 bind attach <return> view-mailcap
 
-color hdrdefault blue black
-color quoted blue black
+color hdrdefault color231 black
+color quoted color69 black
 color signature blue black
 color attachment magenta black
-color message brightred black
-color error brightred black
-color indicator black blue
-color status black blue
+color message color46 black
+color error color197 black
+color indicator color46 color235
+color status color46 black
 color tree white black
-color normal white black
-color markers magenta black
-color search white black
+color normal color15 black
+color markers color197 black
+color search color46 black
 color tilde brightmagenta black
-color index blue black ~F
-color index red black "~N|~O"
+color index black color197 "~N"
 
