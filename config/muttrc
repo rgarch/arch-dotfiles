@@ -1,19 +1,20 @@
-set imap_user= "REDACTED"
-set imap_pass= "REDACTED"
+set imap_user="REDACTED"
+set imap_pass="REDACTED"
 set imap_check_subscribed
-set certificate_file= "~/.mutt/certificates"
-set spoolfile= "imaps://imap.gmail.com:993/INBOX"
-set mail_check= 120
-set postponed= "+Drafts"
-set record= "+Sent"
-set message_cachedir= "~/.cache/mutt"
-set folder= "imaps://imap.gmail.com:993"
-set smtp_url= "smtps://REDACTED@smtp.gmail.com"
-set from= "REDACTED@gmail.com"
-set send_charset= "utf-8"
+set certificate_file="~/.mutt/certificates"
+set spoolfile="imaps://imap.gmail.com:993/INBOX"
+set mail_check=120
+set postponed="+Drafts"
+set record="+Sent"
+set message_cachedir="~/.cache/mutt"
+set folder="imaps://imap.gmail.com:993"
+set smtp_url="smtps://$USER:$PASSWORD@smtp.gmail.com"
+set ssl_force_tls = yes
+set from="REDACTED"
+set send_charset="utf-8"
 bind index "^"	imap-fetch-mail
-set signature= "~/.mutt/.signature"
-set editor= "vim"
+set signature="~/.mutt/.signature"
+set editor="vim"
 set prompt_after=no
 auto_view text/html
 alternative_order text/plain text/enriched text/html
