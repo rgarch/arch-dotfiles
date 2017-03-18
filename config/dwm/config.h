@@ -5,8 +5,8 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 0;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "SourceCodePro:size=14" };
-static const char dmenufont[]       = "SourceCodePro:size=14";
+static const char *fonts[]          = { "SourceCodePro:size=12" };
+static const char dmenufont[]       = "SourceCodePro:size=12";
 static const char red[]       = "#CC0000";
 static const char blue[]       = "#0066FF";
 static const char green[]       = "#00FF00";
@@ -38,9 +38,9 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
+	{ "[M]",      monocle },
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
 };
 
 /* key definitions */
@@ -59,10 +59,11 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", gray, "-nf", blue, "-sb", pink, "-sf", gray, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "chromium", NULL };
+static const char *rofirun[] = { "rofi", "-show", "run", "-config ~/.Xresources", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = rofirun } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browsercmd } }, 
 	{ MODKEY|ShiftMask,             XK_x,      togglebar,      {0} },
