@@ -7,11 +7,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "SourceCodePro:size=12" };
 static const char dmenufont[]       = "SourceCodePro:size=12";
-static const char red[]       = "#CC0000";
-static const char blue[]       = "#0066FF";
-static const char green[]       = "#00FF00";
-static const char pink[]       = "#FF0066";
-static const char gray[]        = "#3A3A3A";
+static const char red[]             = "#CC0000";
+static const char blue[]            = "#0066FF";
+static const char green[]           = "#00FF00";
+static const char pink[]            = "#FF0066";
+static const char gray[]            = "#3A3A3A";
 static const char *colors[][3]      = {
 	/*             fg         bg         border   */
 	[SchemeNorm] = { green, gray, gray },
@@ -53,6 +53,7 @@ static const Layout layouts[] = {
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
