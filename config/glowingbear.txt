@@ -1,0 +1,13 @@
+#readmarker {
+display:none;
+}
+
+tr.bufferline { 
+line-height: 1.4;
+}
+
+.highlight { 
+color: black;
+background: gray;
+font-weight: bold;
+}
