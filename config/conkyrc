@@ -1,27 +1,20 @@
-background             no
+format_human_readable  yes
 out_to_console 	       yes
 out_to_x	           no
-max_text_width         0
-own_window             no
+#max_text_width         0
+#own_window             no
 update_interval        0.5
-total_run_times        0
-short_units            yes
-if_up_strictness       address
+#total_run_times        0
 use_spacer             right
+short_units			   yes
 override_utf8_locale   no
-cpu_avg_samples        2
-mpd_host               oblivion
-mpd_port               6600
-
+mpd_host			   127.0.0.1
+mpd_port			   6600
 
 TEXT
 ,[
-  {"full_text": "  [${addr enp3s0}] ", "color":"\#6C7A89", "separator": false, "separator_block_width":6},\
-  {"full_text": "  [${upspeed enp3s0}] ", "color":"\#0049FF", "separator": false, "separator_block_width":6},\
-  {"full_text": "  [${downspeed enp3s0}] ", "color":"\#00FF09", "separator": false, "separator_block_width":6},\
-  {"full_text": "  [${fs_free /home}] ", "color":"\#F62459", "separator": false, "separator_block_width":6},\
-  {"full_text": "  [${fs_free /}] ", "color":"\#F62459", "separator": false, "separator_block_width":6},\
-  {"full_text": "  [$membar] ", "color":"\#00EFFF", "separator": false, "separator_block_width":6},\
-  {"full_text": "  [$cpubar] ", "color":"\#8D00FF", "separator": false, "separator_block_width":6},\
-  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#FFFFFF", "separator": false}
+	{"full_text": "${mpd_smart}","color": "\#FFFFFF", "separator": false},\
+	{"full_text": " [${upspeed eth0}]","color": "\#00FFFF", "separator": false},\
+	{"full_text": " [${downspeed eth0}]","color": "\#FF5F5F", "separator": false},\
+	{"full_text": "[${time %a %d %b} ${time %H:%M:%S}]","color": "\#00FF09", "separator": false}
 ]
