@@ -26,7 +26,7 @@ set $menu /usr/bin/rofi -show
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/ominous/Downloads/i-archgoat-whore-of-bethlehem-digipack-cd.jpg fit #000000
+# output * bg /home/ominous/Downloads/i-archgoat-whore-of-bethlehem-digipack-cd.jpg fit #000000
     # start a terminal
     bindsym $mod+Return exec $term
 	bindsym $mod+F4					exec --no-startup-id /usr/bin/mpc play
@@ -184,7 +184,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command /home/ominous/.config/sway/conkyi3
+    # status_command /home/ominous/.config/sway/conkyi3
 
     colors {
         statusline #00FF00
