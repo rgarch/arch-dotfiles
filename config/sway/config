@@ -15,10 +15,10 @@ set $up l
 set $right semicolon
 font pango:Source Code Pro 11
 # Your preferred terminal emulator
+# set $term /usr/local/bin/st
 # set $term /usr/bin/kitty
 # set $term /usr/bin/alacritty
-set $term /usr/local/bin/st
-# set $term /usr/bin/termite
+set $term /usr/bin/termite
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
@@ -26,7 +26,7 @@ set $menu /usr/bin/rofi -show
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /home/ominous/Downloads/i-archgoat-whore-of-bethlehem-digipack-cd.jpg fit #000000
+output * bg /home/ominous/Downloads/wood.jpg fill #000000
     # start a terminal
     bindsym $mod+Return exec $term
 	bindsym $mod+F4					exec --no-startup-id /usr/bin/mpc play
@@ -167,10 +167,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 workspace_layout tabbed
-#new_window pixel	1
-
+hide_edge_borders --i3 none
 default_border none
-smart_borders on
+#smart_borders on
 client.background #000000
 client.focused    #6200FF #000000 #FFFFFF #2e9ef4 #232323
 client.unfocused  #232323 #1E1E27 #0091FF #484E50 #232323
@@ -184,7 +183,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    # status_command /home/ominous/.config/sway/conkyi3
+    status_command /home/ominous/.config/sway/conkyi3
 
     colors {
         statusline #00FF00
