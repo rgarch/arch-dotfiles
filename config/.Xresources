@@ -1,24 +1,26 @@
-URxvt*font:			xft:Source Code Pro:pixelsize=14:antialias=true,\
-					xft:Symbola:pixelsize=14:antialias=true,\
+URxvt.font:			xft:Source Code Pro:size=12:antialias=true:style=Regular,\
+					xft:FontAwesome:size=5:antialias=true,\
+					xft:Symbola:size=11:antialias=true,\
 					xft:NanumGothicCoding:pixelsize=14:antialias=true
 
-URxvt*boldFont:		xft:Source Code Pro:pixelsize=14:antialias=true:bold,\
-					xft:NanumGothicCoding:pixelsize=14:antialias=true:bold
+URxvt.boldFont:		xft:Source Code Pro:size=12:antialias=true:style=Bold,\
+					xft:FontAwesome:size=5:antialias=true:style=Bold,\
+					xft:Symbola:size=11:antialias=true:style=Bold,\
+					xft:NanumGothicCoding:pixelsize=14:antialias=true:style=Bold
 
 URxvt*cursorUnderline:      	False
-URxvt*url-select.underline: 	False
+URxvt*url-select.underline: 	True
 URxvt*borderless:           	1
 URxvt*scrollBar:            	False
 URxvt*scrollBar_right:      	False
 URxvt*depth:                	32
 URxvt*urgentOnBell:         	False
 URxvt*shading:              	30
-URxvt*termName:					rxvt-unicode-256color
+URxvt*termName:					rxvt-256color
 URxvt*background:  				[100]#000000
 URxvt*foreground:  				[100]#FFFFFF
-URxvt*cursorColor:      		#0033FF
+URxvt*cursorColor:      		#767676
 URxvt*letterSpace:  			-1
-
 
 Xft.dpi:		102
 Xft.antialias:	true
@@ -29,12 +31,12 @@ Xft.hintstyle:	full
 ! black
 URxvt*color0:  #000000
 ! dark grey
-URxvt*color8:  #8C8B89
+URxvt*color8:  #4D4D4D
 
 ! red
 URxvt*color1:  #B32323
 ! bright red
-URxvt*color9:  #DC2C2C
+URxvt*color9:  #DC322F
 
 ! green
 URxvt*color2:  #1AAA13
@@ -42,9 +44,9 @@ URxvt*color2:  #1AAA13
 URxvt*color10: #5DCE33
 
 ! yellow
-URxvt*color3:  #FF9F3E
+URxvt*color3:  #CB4B16
 ! bright yellow
-URxvt*color11: #E6CB29
+URxvt*color11: #B58900
 
 ! blue
 URxvt*color4:  #4957F3
@@ -57,9 +59,9 @@ URxvt*color5:	#9A12B3
 URxvt*color13:	#FC2CF5
 
 ! cyan
-URxvt*color6:  #09A5B3
+URxvt*color6:  #56B7A5
 ! bright cyan
-URxvt*color14: #3CB6F3
+URxvt*color14: #66EFD5
 
 ! light grey
 URxvt*color7:  #AEAEAE
@@ -100,13 +102,13 @@ URxvt.perl-ext-common:   default,matcher,vtwheel
 URxvt.url-launcher:      /usr/bin/chromium
 URxvt.matcher.button:    1
 
-rofi.modi:				run
+rofi.modi:				run,ssh
 rofi.opacity:			100
 rofi.width:				28
 rofi.lines:				10
 rofi.font:				Source Code Pro 10
 rofi.bw:				3
-rofi.color-window:		#3a3a3a,	#00ff00
-rofi.color-normal:		#6c6c6c,	#FFFFFF,	#585858,	#444444,	#00ff00
+rofi.color-window:		#3a3a3a,	#FF0066
+rofi.color-normal:		#6c6c6c,	#FFFFFF,	#585858,	#444444,	#00FF00
 rofi.hide-scrollbar:	true
 rofi.separator-style:	solid
