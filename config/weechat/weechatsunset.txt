@@ -373,6 +373,7 @@ title.type = window
 [notify]
 
 [filter]
+disconnect = on;*;*;(?-i)^irc: disconnected from server$
 joinquit = on;*;irc_join,irc_part,irc_quit;*
 mode = on;*;irc_mode;*
 
